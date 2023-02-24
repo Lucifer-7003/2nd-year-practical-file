@@ -1,0 +1,153 @@
+Q1. WAP to print your Name in C++.
+
+Q2. WAP to add two no. without using class in C++.
+
+Q3. WAP to use all arithmetic operators without using class in C++.
+
+Q4. WAP to use all assignment operators without using class in C++.
+
+Q5. WAP to use all Relational operators without using class in C++.
+
+Q6. WAP to use all Logical operators without using class in C++.
+
+Q7. WAP to use all Bitwise operators without using class in C++.
+
+Q8. WAP to use Ternury operators without using class in C++.
+
+Q9. WAP to compare 2 no. by using a control statement without using class in C++.
+
+Q10. WAP to Compare 3 no. by using a control statement without using class in C++.
+
+Q11. WAP to find the alphabet is Vowel or consonant by switch case without using class in C++.
+
+Q12. WAP to print "Aryabhatta College Ajmer" 10 times by using while loop.
+
+Q13. WAP to find out whether no. is prime or not using while loop.
+
+Q14. WAP to print prime no. in between 1 to 100 using do while loop.
+
+Q15. WAP to find out whether no. is Armstrong or not using do while loop.
+
+Q16. WAP to print even or odd no. from 1 to 100 using do while loop.
+
+Q17. WAP to print no. is palindrome or not using for loop.
+
+Q18. WAP to Print Fabonacii Series from 1 to 10.
+
+Q19. WAP to print Reverse your 1st year Roll No.
+
+Q20.WAP to print Hollow Rectangle pattern using for loop.
+        * * * * * * *
+        *           *
+        *           *
+        * * * * * * *
+Q21.WAP to print an Inverted half pyramid pattern using for loop.
+        * * * * * 
+        * * * *
+        * * *
+        * * 
+        *
+Q22.WAP to print an Inverted full pyramid pattern using for loop.
+		* * * * * *
+		 * * * * *
+		  * * * * 
+		   * * *
+			* *
+			 *
+Q23.WAP to print Hollow full pyramid pattern using for loop. 
+		 1
+		1 2
+	   1   3
+	  1     4
+	 1 2 3 4 5
+Q24.WAP to print solid half Diamonds pattern using for loop.
+		*
+		* 1
+		* 1 *
+		* 1 * 2
+		* 1 *
+		* 1
+		*
+Q25. WAP to add 2 no. by using class in c++.
+
+Q26. Write a program to print the sum of two numbers entered by the user by defining its own function.
+
+Q27. Define a function that returns the Multiplication of two numbers entered by the user.
+
+Q28. Write a program to print the circumference and area of a circle of radius entered by the user by defining your own function.
+
+Q29.A person is eligible to vote if his/her age is greater than or equal to 18. Define a function to find out if he/she is eligible to vote.
+
+Q30. Write a program that will ask the user to enter his/her marks (out of 100). Define a function that will display grades according to the marks entered below:
+    Marks Grade
+        91-100 AA
+        81-90 AB
+        71-80 BB
+        61-70 BC
+        51-60 CD
+        41-50 DD
+        <=40 Fail
+
+Q31.Write a program that takes as input your gross salary and your total saving and uses another function named taxCalculator() to calculate your tax. The taxCalculator() function takes as parameters the gross salary as well as the total savings amount. The tax is calculated as follows:
+    a. The savings are deducted from the gross income to calculate the taxable income. The maximum deduction of savings can be Rs. 100,000, even though the amount can be more than this.
+    b. For up to 100,000 as taxable income the tax is 0 (Slab 0); beyond 100,000 to 200,000 tax is 10% of the difference above 100,000 (Slab 1); beyond 200,000 up to 500,000 the net tax is the tax calculated from Slab 0 and Slab 1 and then 20% of the taxable income exceeding 200,000 (Slab 2); if it's more than 500,000, then the tax is tax from Slab 0, Slab 1, Slab 2 and 30% of the amount exceeding 500,000.
+
+Q32.Write a function that takes your date of birth in YYYY, MM and DD format (separated by spaces) as input as well as the current date, in the same format, and calculates your age in years, months and days. You must check for leap years also. Write a separate function to check for leap year.
+
+Q33. Assign and print the roll number, phone number and address of two students having names "Sam" and "John" respectively by creating two objects of the class 'Student'.
+
+Q34.Print the average of three numbers entered by the user by creating a class named 'Average' having a function to calculate and print the average without creating any object of the Average class.
+
+Q35.Write a program that would print the information (name, year of joining, salary, address) of three employees by creating a class named 'Employee'. The output should be as follows:
+    Name Year of joining Address
+    Robert 1994 64C- WallsStreat
+    Sam 2000 68D- WallsStreat
+    John 1999 26B- WallsStreat
+
+Q36.Take 10 integer inputs from the user and store them in an array. Again ask the user to give a number. Now, tell the user whether that number is present in the array or not.
+
+Q37.Take 20 integer inputs from the user and print the following:
+    number of positive numbers,
+    number of negative numbers,
+    number of odd numbers,
+    number of even numbers,
+    number of 0.
+
+Q38.Take 10 integer inputs from the user and store them in an array. Now, copy all the elements in another array but in reverse order.
+
+Q39.Find the Second largest and second smallest elements of an array.
+
+Q40.Write a program to print the sum and average of all numbers, the smallest and largest element of an array.
+
+Q41. Write a program to compare two dates entered by the user. Make a structure named Date to store the elements day, month and year to store the dates. If the dates are equal, display "Dates are equal" otherwise display "Dates are not equal".
+
+Q42. Write a program to print the name, salary and date of joining of 10 employees in a company. Use an array of objects.
+
+Q43. Write a C++ program to define overloaded functions to find the volume of the cube & volume of the Cylinder.
+
+Q44. Create a class student with the following non-static data members: no, name, marks and static data member fees Create static functions to store and retrieve values from the static data member.
+
+Q45. Assume that a bank maintains two kinds of accounts for customers, one called a savings account and the other a current account.
+    a. The savings account provides compound interest and withdrawal facilities but no checkbook facility.
+    b. The current account provides a checkbook facility but no interest. Current account holders should also maintain a minimum balance of Rs.1000 and if the balance falls below this level, a service charge is imposed.
+    c. Create a class account that stores the customer name, account number and type of account. From this derive the classes: - cur_acct and sav_acct to make them more specific to their requirements.
+    d. Include necessary member functions to achieve the following tasks: -
+        i. Accept a deposit from a customer and update the balance.
+        ii. Display the balance.
+        iii. Complete and deposit interest.
+        iv. Permit withdrawal and update the balance.
+        v. Check for the minimum balance, impose a penalty if necessary, and upgrade the balance. Do not use any constructors.
+        vi. Use member functions to initialize the class members.
+
+Q46. Create a class Student containing Rollno, name, and address as data members and provide methods to get and set data. From this class derive two classes InternalExam and ExternalExam.
+    a. InternalExam contains marks of 3 subjects and maximum marks as data members and member methods to get and set data. (Eng., Hindi, Maths) out of 150.
+    b. ExternalExam contains marks of practical and maximum marks as data members and member methods to get and set data. (Practical) out of 100.
+    c. From these two classes, derive the Result class that displays the entire information of the student and calculates the total marks and percentage obtained by the student.
+
+Q47. Create a class Vehicle that contains the registration_number and count_of_vehicle as data members and methods to get or set data. From this class drive another class that contains type_of_vehicle (motorbike, car, truck, buses etc.), and no_of_passengers. Create methods to get and set data. Display the entire information of the vehicle along With the total number of vehicles which came into existence.
+
+Q48. Create a function to swap the values of two integers using call by reference.
+
+Q49. Make a function that will take a number and return the highest digit in the number.
+
+Q50. Input 9 numbers in a matrix of three rows and three cols and find the sum of each row and each column individually.
