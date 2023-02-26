@@ -16,10 +16,12 @@ int main()
 
     if (num1 == num2)
         cout << "Both number are same" << endl;
+
     else if (num1 > num2)
-        cout << num1 << " is greater then " << num2 << endl;
+        cout << num1 << " is Greater then " << num2 << endl;
+
     else
-        cout << num2 << " is greater then " << num1 << endl;
+        cout << num2 << " is Greater then " << num1 << endl;
 
     return 0;
 }
