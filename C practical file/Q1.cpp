@@ -10,7 +10,6 @@ int main()
 	// system("CLS");
 	// system("cls");
 	system("clear");
-
 	cout << "Your name is : " << name << endl;
 	return 0;
 }
