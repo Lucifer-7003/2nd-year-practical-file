@@ -41,53 +41,41 @@ Q20. WAP to print Hollow Rectangle pattern using for loop.
         *           *
         *           *
         * * * * * * *
-<<<<<<< HEAD
 
 Q21. WAP to print an Inverted half pyramid pattern using for loop.
-=======
-Q21.WAP to print an Inverted half pyramid pattern using for loop.
->>>>>>> parent of 216043c (Changes made)
-        * * * * * 
-        * * * *
-        * * *
-        * * 
-        *
-<<<<<<< HEAD
 
-Q22. WAP to print an Inverted full pyramid pattern using for loop.
-=======
-Q22.WAP to print an Inverted full pyramid pattern using for loop.
->>>>>>> parent of 216043c (Changes made)
-		* * * * * *
-		 * * * * *
-		  * * * * 
-		   * * *
-			* *
-			 *
-<<<<<<< HEAD
-
+Q20. WAP to print Hollow Rectangle pattern using for loop.
+    * * * * * * *
+    *           *
+    *           *
+    * * * * * * *
+Q21. WAP to print Inverted half pyramid pattern using for loop.
+    * * * * * 
+    * * * *
+    * * *
+    * * 
+    *
+Q22. WAP to print Inverted full pyramid pattern using for loop.
+	* * * * * *
+	 * * * * *
+	  * * * * 
+	   * * *
+		* *
+		 *
 Q23. WAP to print Hollow full pyramid pattern using for loop. 
-=======
-Q23.WAP to print Hollow full pyramid pattern using for loop. 
->>>>>>> parent of 216043c (Changes made)
-		 1
-		1 2
-	   1   3
-	  1     4
-	 1 2 3 4 5
-<<<<<<< HEAD
-
+		1
+	   1 2
+	  1   3
+	 1     4
+	1 2 3 4 5
 Q24. WAP to print solid half Diamonds pattern using for loop.
-=======
-Q24.WAP to print solid half Diamonds pattern using for loop.
->>>>>>> parent of 216043c (Changes made)
-		*
-		* 1
-		* 1 *
-		* 1 * 2
-		* 1 *
-		* 1
-		*
+	*
+	* 1
+	* 1 *
+	* 1 * 2
+	* 1 *
+	* 1
+	*
 Q25. WAP to add 2 no. by using class in c++.
 
 Q26. Write a program to print the sum of two numbers entered by the user by defining its own function.
