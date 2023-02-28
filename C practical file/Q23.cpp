@@ -7,52 +7,37 @@
 #include <iostream>
 using namespace std;
 
-// void pyramid(int rows)
-// {
-//     for (int i = 1, k = 0; i <= rows; i++, k = 0)
-//     {
-//         for (int space = 1; space <= (rows - i); space++)
-//         {
-//             cout << " ";
-//         }
-//         while (k != (2 * i - 1))
-//         {
-//             if (k == 0 || k == (2 * i - 2))
-//             {
-//                 cout << "1";
-//             }
-//             else
-//             {
-//                 cout << " ";
-//             }
-//             k++;
-//         }
-//         cout << endl;
-//     }
-// }
-
-int main()
+void pyramid(int rows)
 {
-    int i, j, k;
-    for (i = 1; i <= 5; i++)
+    int x = 1;
+    for (int i = 1; i < rows; i++)
     {
-        for (k = 5; k > i; k--)
+        for (int j = rows; j > i; j--)
         {
             cout << " ";
         }
-        for (j = 1; j <= i; j++)
+        for (int j = 1; j < (2 * i); j++)
         {
-            if (i == 3 && j == 2 || i == 4 && j > 1 && j < 4)
-            {
-                cout << "  ";
-            }
+            if (j == 1 || j == i)
+                cout << x << " ";
             else
-            {
-                cout << j << " ";
-            }
+                cout << "  ";
+            x++;
         }
+        x = 1;
         cout << endl;
     }
+    for (int j = 1; j <= rows; j++)
+    {
+        cout << j << " ";
+    }
+}
 
+int main()
+{
+    int rows;
+    cout << "Enter no. of rows : ";
+    cin >> rows;
+    pyramid(rows);
     return 0;
 }
