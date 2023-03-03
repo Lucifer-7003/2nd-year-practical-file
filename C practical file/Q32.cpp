@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// This function determines if a given year is a leap year
 bool isLeapYear(int year)
 {
     if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
@@ -12,6 +13,7 @@ bool isLeapYear(int year)
     return false;
 }
 
+// This function calculates the age in years, months, and days
 void calculateAge(int birth_year, int birth_month, int birth_day, int current_year, int current_month, int current_day)
 {
     int months[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // days in each month

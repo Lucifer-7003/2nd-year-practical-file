@@ -25,10 +25,19 @@ public:
 int main()
 {
     int num1, num2, num3;
-    cout << "Enter 3 number : ";
+
+    // Prompt user to input three numbers
+    cout << "Enter 3 numbers separated by spaces: ";
     cin >> num1 >> num2 >> num3;
+
+    // Create an instance of the Average class
     Average avg;
+
+    // Call the getData function to set the data for the instance
     avg.getData(num1, num2, num3);
-    cout << "Average of 3 numbers : " << avg.showData() << endl;
+
+    // Display the average of the three numbers
+    cout << "Average of 3 numbers: " << avg.showData() << endl;
+
     return 0;
 }

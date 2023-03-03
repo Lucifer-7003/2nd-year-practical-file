@@ -5,28 +5,38 @@ using namespace std;
 
 int main()
 {
+    // Declare variables
     int num1, num2, result;
-    cout << "Enter 2 number : ";
+
+    // Get input from user
+    cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
+
+    // Clear screen
     system("clear");
 
-    cout << "Entered number are: " << num1 << " " << num2 << endl;
-    cout << "Logical operator:" << endl;
+    // Display the entered numbers
+    cout << "Entered numbers are: " << num1 << " " << num2 << endl;
 
-    result = (num1 > 5) && (num2 < 5); // And
+    // Logical operators
+    cout << "Logical operators:" << endl;
+
+    // AND operator
+    result = (num1 > 5) && (num2 < 5);
     cout << "(" << num1 << " > 5) && (" << num2 << " < 5) : " << result << endl;
 
-    result = (num1 > 5) || (num2 < 5); // OR
+    // OR operator
+    result = (num1 > 5) || (num2 < 5);
     cout << "(" << num1 << " > 5) || (" << num2 << " < 5) : " << result << endl;
 
+    // NOT operator
     result = !(num1 > 5);
     cout << "!(" << num1 << " > 5) : " << result << endl;
 
     result = !(num2 < 5);
     cout << "!(" << num2 << " < 5) : " << result << endl;
 
+    // Display note
     cout << "\n\n**Note : Here '0' = false, '1' = true **" << endl;
 
     return 0;

@@ -6,36 +6,47 @@ using namespace std;
 int main()
 {
     int num1, num2, result;
-    cout << "Enter 2 number : ";
+    cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
+
+    // Clear console screen
     system("clear");
 
-    cout << "Entered number are: " << num1 << ", " << num2 << endl;
-    cout << "Bitwise operator:" << endl;
+    // Print the entered numbers
+    cout << "Entered numbers are: " << num1 << ", " << num2 << endl;
 
-    result = num1 & num2; // Is Equals To
+    // Perform bitwise operations
+    cout << "Bitwise operators:" << endl;
+
+    // Bitwise AND
+    result = num1 & num2;
     cout << num1 << " & " << num2 << " : " << result << endl;
 
-    result = num1 | num2; // Not Equals To
+    // Bitwise OR
+    result = num1 | num2;
     cout << num1 << " | " << num2 << " : " << result << endl;
 
-    result = num1 ^ num2; // Greater Than
+    // Bitwise XOR
+    result = num1 ^ num2;
     cout << num1 << " ^ " << num2 << " : " << result << endl;
 
+    // Bitwise NOT of num1
     result = ~num1;
-    cout << "~ " << num1 << " : " << result << endl;
+    cout << "~" << num1 << " : " << result << endl;
 
+    // Bitwise NOT of num2
     result = ~num2;
-    cout << "~ " << num2 << " : " << result << endl;
+    cout << "~" << num2 << " : " << result << endl;
 
-    result = num1 << num2; // Greater Than or Equals To
+    // Bitwise left shift of num1 by num2 bits
+    result = num1 << num2;
     cout << num1 << " << " << num2 << " : " << result << endl;
 
-    result = num1 >> num2; // Lesser Than or Equals To
+    // Bitwise right shift of num1 by num2 bits
+    result = num1 >> num2;
     cout << num1 << " >> " << num2 << " : " << result << endl;
 
+    // Print explanation of the output
     cout << "\n\n**here '0' = false, '1' = true **" << endl;
 
     return 0;

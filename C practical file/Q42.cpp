@@ -1,24 +1,31 @@
 // Q42. Write a program to print the name, salary and date of joining of 10 employees in a company. Use an array of objects.
-
+// This program demonstrates the use of classes and objects in C++.
 #include <iostream>
 #include <string>
 
 using namespace std;
 
+// Define the Employee class
 class Employee
 {
-    int doj, salary;
+    // Data members of the class
+    int doj; // Date of joining
+    int salary;
     string name;
 
 public:
+    // Public member functions of the class
     void getdate(string name, int salary, int doj)
     {
+        // Store the passed values in the class data members
         this->name = name;
         this->salary = salary;
         this->doj = doj;
     }
+
     void showDate()
     {
+        // Display the data members of the class
         cout << "Name : " << name << endl;
         cout << "\tSalary : " << salary << endl;
         cout << "\tDate of joining : " << doj << endl;
@@ -26,9 +33,13 @@ public:
     }
 };
 
+// The main function
 int main()
 {
+    // Create an array of 10 Employee objects
     Employee emp[10];
+
+    // Get the data for each employee from the user
     for (int i = 0; i < 10; i++)
     {
         string name;
@@ -43,8 +54,12 @@ int main()
         cout << "Date of joining : ";
         cin >> doj;
         cout << endl;
+
+        // Store the data in the appropriate Employee object
         emp[i].getdate(name, salary, doj);
     }
+
+    // Display the data for each employee
     cout << endl;
     for (int i = 0; i < 10; i++)
     {

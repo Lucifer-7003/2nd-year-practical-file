@@ -5,29 +5,40 @@ using namespace std;
 
 int main()
 {
+    // Declare variables to hold user input, calculation results
     int num1, num2, result;
-    cout << "Enter 2 number : ";
+
+    // Prompt user for input and read in values
+    cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
+
+    // Clear the console screen for better output visibility
     system("clear");
 
-    cout << "Entered number are: " << num1 << " " << num2 << endl;
-    cout << "Arithmetic operator:" << endl;
+    // Display the entered numbers
+    cout << "Entered numbers are: " << num1 << " " << num2 << endl;
 
+    // Perform arithmetic operations and display results
     result = num1 + num2;
-    cout << "Addition : " << result << endl;
+    cout << "Addition: " << result << endl;
 
     result = num1 - num2;
-    cout << "Subtraction : " << result << endl;
+    cout << "Subtraction: " << result << endl;
 
     result = num1 * num2;
-    cout << "Multiplication : " << result << endl;
+    cout << "Multiplication: " << result << endl;
 
-    result = num1 / num2;
-    cout << "Division : " << result << endl;
+    if (num2 != 0)
+    {
+        result = num1 / num2;
+        cout << "Division: " << result << endl;
+        result = num1 % num2;
+        cout << "Modulus: " << result << endl;
+    }
+    else
+    {
+        cout << "Cannot divide by zero" << endl;
+    }
 
-    result = num1 % num2;
-    cout << "Modulas : " << result << endl;
     return 0;
 }

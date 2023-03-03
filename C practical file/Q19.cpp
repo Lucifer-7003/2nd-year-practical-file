@@ -3,9 +3,10 @@
 #include <iostream>
 using namespace std;
 
+// function to reverse a given number
 int reverse(int number)
 {
-    int rev, num = number;
+    int rev = 0, num = number;
     while (num != 0)
     {
         int temp = num % 10;
@@ -21,6 +22,9 @@ int main()
     int roll_no;
     cout << "Enter your Roll no. : ";
     cin >> roll_no;
+
+    // calling the reverse function to get the reverse of the entered roll number
     cout << "Reverse of your Roll no. : " << reverse(roll_no) << endl;
+
     return 0;
 }

@@ -2,28 +2,35 @@
 #include <iostream>
 using namespace std;
 
+// Define a structure to hold a date
 struct Date
 {
     int year, month, day;
 };
 
+// Function to compare two dates for equality
 bool compare(Date date1, Date date2)
 {
     bool result = false;
-    if ((date1.year && date2.year) && (date1.month && date2.month) && (date1.day && date2.day))
+    // Check if all three fields (year, month, day) are equal in both dates
+    if ((date1.year == date2.year) && (date1.month == date2.month) && (date1.day == date2.day))
         result = true;
     return result;
 }
 
+// Main function
 int main()
 {
     Date d1, d2;
-    cout << "Enter 1st date(in 'DD MM YYYY' formate) : ";
+    // Prompt the user to enter the first date
+    cout << "Enter 1st date (in 'DD MM YYYY' format): ";
     cin >> d1.day >> d1.month >> d1.year;
     cout << endl;
-    cout << "Enter 2nd date(in 'DD MM YYYY' formate) : ";
+    // Prompt the user to enter the second date
+    cout << "Enter 2nd date (in 'DD MM YYYY' format): ";
     cin >> d2.day >> d2.month >> d2.year;
     cout << endl;
+    // Compare the two dates and output the result
     if (compare(d1, d2))
         cout << "Date are equal" << endl;
     else

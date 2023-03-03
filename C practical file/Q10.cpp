@@ -6,20 +6,25 @@ using namespace std;
 int main()
 {
     int num1, num2, num3, result;
-    cout << "Enter 3 number : ";
+    // Getting the three numbers as input from the user
+    cout << "Enter 3 numbers: ";
     cin >> num1 >> num2 >> num3;
 
+    // Checking if all numbers are equal
     if (num1 == num2 && num1 == num3)
-        cout << "All number are equal" << endl;
+        cout << "All numbers are equal" << endl;
 
+    // If num1 is greater than both num2 and num3
     else if (num1 > num2 && num1 > num3)
-        cout << num1 << " is Greatest" << endl;
+        cout << num1 << " is the greatest number" << endl;
 
+    // If num2 is greater than num3
     else if (num2 > num3)
-        cout << num2 << " is Greatest" << endl;
+        cout << num2 << " is the greatest number" << endl;
 
+    // If none of the above conditions are true, then num3 is the greatest number
     else
-        cout << num3 << " is Greatest" << endl;
+        cout << num3 << " is the greatest number" << endl;
 
     return 0;
 }

@@ -1,34 +1,49 @@
 // Q15. WAP to find out whether no. is Armstrong or not using do while loop.
+
 #include <iostream>
 using namespace std;
 
+// Function to check if a number is Armstrong or not
 bool isArmstrong(int number)
 {
-    float result = false;
-    int num = number;
-    while (num != 0)
+    // Initialize variables
+    int sum = 0, temp = number;
+
+    // Calculate the sum of the cubes of each digit
+    while (temp != 0)
     {
-        int temp = num % 10;
-        result += (temp * temp * temp);
-        num /= 10;
+        int digit = temp % 10;
+        sum += digit * digit * digit;
+        temp /= 10;
     }
-    if (result == number)
+
+    // Check if the sum is equal to the original number
+    if (sum == number)
     {
-        result = true;
+        return true;
     }
-    return result;
+    else
+    {
+        return false;
+    }
 }
 
 int main()
 {
+    // Get user input
     int num;
     cout << "Enter a number : ";
     cin >> num;
-    if (isArmstrong(num))
-        cout << num << " is an Armstrong no." << endl;
 
+    // Check if the number is Armstrong
+    if (isArmstrong(num))
+    {
+        cout << num << " is an Armstrong number" << endl;
+    }
     else
-        cout << num << " is NOT an Armstrong no." << endl;
+    {
+        cout << num << " is NOT an Armstrong number" << endl;
+    }
 
     return 0;
 }

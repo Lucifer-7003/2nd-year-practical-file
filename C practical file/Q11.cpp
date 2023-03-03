@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// function to check if the input character is a vowel
 bool ifVowel(char character)
 {
     bool result = false;
@@ -19,6 +20,7 @@ bool ifVowel(char character)
     case 'O':
     case 'U':
         result = true;
+        break; // added break statement to prevent fall-through to default case
     default:
         break;
     }
@@ -30,11 +32,10 @@ int main()
     char input;
     cout << "Enter a character : ";
     cin >> input;
+    // call function to check if the input character is a vowel or not
     if (ifVowel(input))
         cout << input << " is a Vowel" << endl;
-
     else
         cout << input << " is a Consonant" << endl;
-
     return 0;
 }

@@ -5,34 +5,47 @@ using namespace std;
 
 int main()
 {
+    // Variables to store the user input and result of comparison
     int num1, num2, result;
-    cout << "Enter 2 number : ";
+
+    // Prompt user to input two numbers
+    cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
+
+    // Clear console screen
     system("clear");
 
-    cout << "Entered number are: " << num1 << " " << num2 << endl;
-    cout << "Relationl operator:" << endl;
+    // Display the entered numbers
+    cout << "Entered numbers are: " << num1 << " " << num2 << endl;
 
-    result = num1 == num2; // Is Equals To
+    // Display the different relational operators and their results
+    cout << "Relational operators:" << endl;
+
+    // Is Equals To
+    result = num1 == num2;
     cout << num1 << " == " << num2 << " : " << result << endl;
 
-    result = num1 != num2; // Not Equals To
+    // Not Equals To
+    result = num1 != num2;
     cout << num1 << " != " << num2 << " : " << result << endl;
 
-    result = num1 > num2; // Greater Than
+    // Greater Than
+    result = num1 > num2;
     cout << num1 << " > " << num2 << " : " << result << endl;
 
-    result = num1 < num2; // Lesser Than
+    // Lesser Than
+    result = num1 < num2;
     cout << num1 << " < " << num2 << " : " << result << endl;
 
-    result = num1 >= num2; // Greater Than or Equals To
+    // Greater Than or Equals To
+    result = num1 >= num2;
     cout << num1 << " >= " << num2 << " : " << result << endl;
 
-    result = num1 <= num2; // Lesser Than or Equals To
+    // Lesser Than or Equals To
+    result = num1 <= num2;
     cout << num1 << " <= " << num2 << " : " << result << endl;
 
+    // Display explanation of result values
     cout << "\n\n**here '0' = false, '1' = true **" << endl;
 
     return 0;

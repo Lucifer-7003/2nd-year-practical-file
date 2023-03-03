@@ -14,6 +14,7 @@
 #include <string>
 using namespace std;
 
+// The Account class serves as the base class for all other account types
 class Account
 {
 protected:
@@ -23,6 +24,7 @@ protected:
     double balance;
 
 public:
+    // Initialize account details
     void initialize(string n, int a, string t, double b)
     {
         name = n;
@@ -31,6 +33,7 @@ public:
         balance = b;
     }
 
+    // Deposit money into the account
     void deposit(double amt)
     {
         balance += amt;
@@ -38,30 +41,33 @@ public:
         cout << "Current balance: Rs." << balance << endl;
     }
 
+    // Display the current balance of the account
     void displayBalance()
     {
         cout << "Current balance: Rs." << balance << endl;
     }
 
-    virtual void depositInterest() = 0;
-
-    virtual void withdraw(double amt) = 0;
-
-    virtual void checkMinBalance() = 0;
+    // These functions are declared as virtual, so that they can be overridden by derived classes
+    virtual void depositInterest() = 0;    // Deposit interest into the account
+    virtual void withdraw(double amt) = 0; // Withdraw money from the account
+    virtual void checkMinBalance() = 0;    // Check if the account has fallen below its minimum balance
 };
 
+// The CurrentAccount class is derived from the Account class
 class CurrentAccount : public Account
 {
 private:
-    const double MIN_BALANCE = 1000;
-    const double SERVICE_CHARGE = 50;
+    const double MIN_BALANCE = 1000;  // Minimum balance for a current account
+    const double SERVICE_CHARGE = 50; // Service charge for falling below minimum balance
 
 public:
+    // Deposit interest into the account (no interest for current account)
     void depositInterest()
     {
         // No interest in current account
     }
 
+    // Withdraw money from the account
     void withdraw(double amt)
     {
         if (balance - amt < MIN_BALANCE)
@@ -77,6 +83,7 @@ public:
         checkMinBalance();
     }
 
+    // Check if the account has fallen below its minimum balance, and impose a service charge if necessary
     void checkMinBalance()
     {
         if (balance < MIN_BALANCE)
@@ -88,12 +95,16 @@ public:
     }
 };
 
+// SavingsAccount is a derived class of the Account class
+// It adds a RATE variable and implements depositInterest, withdraw and checkMinBalance functions
+
 class SavingsAccount : public Account
 {
 private:
     const double RATE = 0.05;
 
 public:
+    // Adds interest to the balance
     void depositInterest()
     {
         double interest = balance * RATE;
@@ -103,6 +114,7 @@ public:
         cout << "Current balance: Rs." << balance << endl;
     }
 
+    // Withdraws an amount from the balance
     void withdraw(double amt)
     {
         if (balance - amt < 0)
@@ -116,6 +128,7 @@ public:
         cout << "Current balance: Rs." << balance << endl;
     }
 
+    // Does not have minimum balance requirement
     void checkMinBalance()
     {
         // No minimum balance in savings account
@@ -124,6 +137,7 @@ public:
 
 int main()
 {
+    // Create SavingsAccount object and perform operations on it
     SavingsAccount sa;
     sa.initialize("John Doe", 1001, "Savings", 5000.0);
     sa.displayBalance();
@@ -133,6 +147,7 @@ int main()
 
     cout << endl;
 
+    // Create CurrentAccount object and perform operations on it
     CurrentAccount ca;
     ca.initialize("Jane Doe", 1002, "Current", 5000.0);
     ca.displayBalance();

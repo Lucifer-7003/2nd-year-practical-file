@@ -3,54 +3,66 @@
 #include <iostream>
 using namespace std;
 
+// Find the second smallest or second largest number in the array
+// Option 1: Find second smallest
+// Option 0: Find second largest
 int arrayAnalysis(int *arr, int option, int len)
 {
     int result;
     switch (option)
     {
     case 1:
-        int secd_small, small;
+        int second_smallest, smallest;
         for (int i = 0; i < len; i++)
         {
             if (i == 0)
             {
-                small = arr[i];
-                secd_small = small;
+                smallest = arr[i];
+                second_smallest = smallest;
             }
-            if (arr[i] < small)
+            if (arr[i] < smallest)
             {
-                secd_small = small;
-                small = arr[i];
+                second_smallest = smallest;
+                smallest = arr[i];
+            }
+            else if (arr[i] < second_smallest)
+            {
+                second_smallest = arr[i];
             }
         }
-        return secd_small;
+        return second_smallest;
         break;
 
     default:
-        int secd_large, large;
+        int second_largest, largest;
         for (int i = 0; i < len; i++)
         {
             if (i == 0)
             {
-                large = arr[i];
-                secd_large = large;
+                largest = arr[i];
+                second_largest = largest;
             }
-            if (arr[i] > large)
+            if (arr[i] > largest)
             {
-                secd_large = large;
-                large = arr[i];
+                second_largest = largest;
+                largest = arr[i];
+            }
+            else if (arr[i] > second_largest)
+            {
+                second_largest = arr[i];
             }
         }
-        return secd_large;
+        return second_largest;
         break;
     }
 }
 
 int main()
 {
-    int arr[10], secd_small, secd_large;
+    const int ARRAY_SIZE = 10;
+    int arr[ARRAY_SIZE];
     size_t len = sizeof(arr) / sizeof(int);
-    cout << "Enter 10 no. : ";
+    cout << "Enter " << ARRAY_SIZE << " numbers: ";
     for (int i = 0; i < len; i++)
     {
         int a;
@@ -58,9 +70,14 @@ int main()
         arr[i] = a;
     }
     cout << endl;
-    secd_small = arrayAnalysis(arr, 1, len);
-    secd_large = arrayAnalysis(arr, 0, len);
-    cout << "Second Smallest in the array : " << secd_small << endl;
-    cout << "Second Largest in the array : " << secd_large << endl;
+
+    // Find the second smallest and second largest numbers in the array
+    int second_smallest = arrayAnalysis(arr, 1, len);
+    int second_largest = arrayAnalysis(arr, 0, len);
+
+    // Output the results
+    cout << "Second smallest number in the array: " << second_smallest << endl;
+    cout << "Second largest number in the array: " << second_largest << endl;
+
     return 0;
 }

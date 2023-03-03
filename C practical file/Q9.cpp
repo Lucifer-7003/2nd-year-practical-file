@@ -5,21 +5,26 @@ using namespace std;
 
 int main()
 {
+    // declare variables for input
     int num1, num2;
-    cout << "Enter 2 number : ";
+
+    // prompt user to enter two numbers and store them in variables
+    cout << "Enter two numbers: ";
     cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
+
+    // clear the console for better visibility
     system("clear");
 
-    cout << "Entered number are : " << num1 << ", " << num2 << endl;
+    // display the entered numbers
+    cout << "Entered numbers are: " << num1 << ", " << num2 << endl;
 
+    // check which number is greater or if they are equal
     if (num1 == num2)
-        cout << "Both number are same" << endl;
+        cout << "Both numbers are the same." << endl;
     else if (num1 > num2)
-        cout << num1 << " is greater then " << num2 << endl;
+        cout << num1 << " is greater than " << num2 << endl;
     else
-        cout << num2 << " is greater then " << num1 << endl;
+        cout << num2 << " is greater than " << num1 << endl;
 
     return 0;
 }

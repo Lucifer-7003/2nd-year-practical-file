@@ -10,27 +10,28 @@ using namespace std;
 
 int main()
 {
-    int pov, neg, odd, even, zeros;
-    cout << "Enter 20 no : ";
+    int pov = 0, neg = 0, odd = 0, even = 0, zeros = 0; // Initialize all counters to 0
+    cout << "Enter 20 numbers: ";
     for (int i = 0; i < 20; i++)
     {
         int a;
         cin >> a;
-        if (a > 0)
+        if (a > 0) // Check if the number is positive
         {
-            ++pov;
-            (a % 2 == 0) ? ++even : ++odd;
+            ++pov;                         // Increment the positive counter
+            (a % 2 == 0) ? ++even : ++odd; // Increment either the even or odd counter based on the remainder of the number divided by 2
         }
-        else if (a < 0)
+        else if (a < 0) // Check if the number is negative
         {
-            ++neg;
-            (a % 2 == 0) ? ++even : ++odd;
+            ++neg;                         // Increment the negative counter
+            (a % 2 == 0) ? ++even : ++odd; // Increment either the even or odd counter based on the remainder of the number divided by 2
         }
-        else
+        else // If the number is 0
         {
-            ++zeros;
+            ++zeros; // Increment the zero counter
         }
     }
+    // Print the results
     cout << "There are :" << endl;
     cout << "\t" << pov << "  Positive numbers," << endl;
     cout << "\t" << neg << "  Negative numbers," << endl;

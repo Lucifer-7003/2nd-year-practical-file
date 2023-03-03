@@ -5,15 +5,17 @@ using namespace std;
 
 int main()
 {
-    int num1, num2, result;
-    cout << "Enter 2 number: ";
-    cin >> num1 >> num2;
-    // system("CLS");
-    // system("cls");
-    system("clear");
-    cout << "Entered number are: " << num1 << " " << num2 << endl;
+    int num1, num2, result; // declaration of variables
 
-    result = num1 + num2;
-    cout << "\nAddition of " << num1 << " & " << num2 << " is : " << result << endl;
-    return 0;
+    cout << "Enter two numbers: "; // prompt for user input
+    cin >> num1 >> num2;           // reading two numbers from user
+
+    system("clear"); // clearing the console screen
+
+    cout << "Entered numbers: " << num1 << " " << num2 << endl; // displaying the entered numbers
+
+    result = num1 + num2;                                                           // performing addition
+    cout << "Addition of " << num1 << " and " << num2 << " is: " << result << endl; // displaying the addition result
+
+    return 0; // end of program
 }
