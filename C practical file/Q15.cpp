@@ -25,7 +25,7 @@ int main()
     cout << "Enter a number : ";
     cin >> num;
     if (isArmstrong(num))
-        cout << num << " is an Armstring no." << endl;
+        cout << num << " is an Armstrong no." << endl;
 
     else
         cout << num << " is NOT an Armstrong no." << endl;
