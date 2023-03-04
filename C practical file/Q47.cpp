@@ -9,13 +9,13 @@ class Vehicle
 {
 protected:
     string registration_number;
-    static int count_of_vehicle;
+    static int count_of_vehicle; // static variable to keep count of vehicles
 
 public:
     Vehicle()
     {
         registration_number = "";
-        count_of_vehicle++;
+        count_of_vehicle++; // increment count of vehicles when a new object is created
     }
 
     void set_registration_number(string reg_num)
@@ -28,13 +28,13 @@ public:
         return registration_number;
     }
 
-    static int get_count_of_vehicle()
+    static int get_count_of_vehicle() // static method to access count of vehicles
     {
         return count_of_vehicle;
     }
 };
 
-int Vehicle::count_of_vehicle = 0;
+int Vehicle::count_of_vehicle = 0; // initializing static variable to 0
 
 class TypeOfVehicle : public Vehicle
 {
@@ -68,7 +68,7 @@ public:
         cout << "Registration Number: " << registration_number << endl;
         cout << "Type of Vehicle: " << type_of_vehicle << endl;
         cout << "No. of Passengers: " << no_of_passengers << endl;
-        cout << "Total Vehicles: " << Vehicle::get_count_of_vehicle() << endl;
+        cout << "Total Vehicles: " << Vehicle::get_count_of_vehicle() << endl; // accessing static method of base class
     }
 };
 
