@@ -1,0 +1,51 @@
+Q1. WAP to read a string from user and display it's reverse.
+
+Q2. WAP to read two no from user and swap thier values without using third variable.
+
+Q3. Write a Java program to check if a vowel is present in a string.
+
+Q4. Write a Java program to check if the given number is a prime number.
+
+Q5. WAP to calculate area of circle.
+
+Q6. WAP to read three numbers from user and display the max no.
+
+Q7. Write a program to read roll no, name and marks of three subjects and calculate the total, percentage and division. 
+
+Q8. WAP to print all prime no between 1 to 100.
+
+Q9. WAP to print all perfect no between 1 to 100.
+
+Q10. WAP to print full pyramid pattern:
+
+			1
+		  3 2 1
+		5 4 3 2 1
+	  7 6 5 4 3 2 1
+	9 8 7 6 5 4 3 2 1	
+
+Q11. Write a program to insert an element (specific position) into an uni dim array.
+
+Q12. Write a program to sort the uni dim array list in ascending order.
+
+Q13. WAP to create 3*3 matrix and display sum of both the diagonals.
+
+Q14. WAP to create 3*3 matrix and display matrix multiplication.
+
+Q15. WAP to create 3*3 matrix and display count of prime no of each row.
+
+Q16. WAP to create a method which return factorial of a given no.
+
+Q17. WAP to create a method which return lcm of given two no.
+
+Q18. WAP to create a class Student with following data members:
+	1. rollno	2. name	3.phy	4.chem	5. math	6. total	7. per
+
+	create following methods:
+	1. getData()
+	2. showData()
+	3. calculateResult()
+
+Q19. WAP to give an example of multi level inheritance.
+
+Q20. WAP to given an example of Hierarchical inheritance.	  

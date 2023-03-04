@@ -1,0 +1,67 @@
+Q1:
+    Enter a text : aditya
+    Reverse : aytida
+
+Q2:
+    Enter 2 numbers: 10 20
+    Numbers Before swap : num1 = 10, num2 = 20
+    Numbers After swap : num1 = 20, num2 = 10
+
+Q3: 
+    Enter a text : qwrtyd
+    There Are NO vowel in the inputed text
+
+Q4:
+    Enter a number : 19
+    19 is a Prime no. 
+
+Q5:
+    Enter radius of the circle : 12.7
+    Area of Circle : 506.70747909753106
+
+Q6:
+    Enter 3 numbers: 10 20 30
+    30 is the greatest.
+
+Q7:
+    Enter Student's Roll no.: 121
+            Name: Aditya
+    Enter Marks of subject (out of 100)
+            English: 87 
+            Math: 67
+            Science: 85
+
+    Percentage: 79.0
+    Division: 2nd
+
+Q8:
+    Prime no. b/w 1 to 100
+    2 is a Prime no.
+    3 is a Prime no.
+    5 is a Prime no.
+    7 is a Prime no.
+    11 is a Prime no.
+    13 is a Prime no.
+    17 is a Prime no.
+    19 is a Prime no.
+    23 is a Prime no.
+    29 is a Prime no.
+    31 is a Prime no.
+    37 is a Prime no.
+    41 is a Prime no.
+    43 is a Prime no.
+    47 is a Prime no.
+    53 is a Prime no.
+    59 is a Prime no.
+    61 is a Prime no.
+    67 is a Prime no.
+    71 is a Prime no.
+    73 is a Prime no.
+    79 is a Prime no.
+    83 is a Prime no.
+    89 is a Prime no.
+    97 is a Prime no.
+
+Q9:
+    Perfect no b/w 1 to 100
+    6, 28, 
