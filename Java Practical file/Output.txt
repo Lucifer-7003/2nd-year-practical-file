@@ -65,3 +65,97 @@ Q8:
 Q9:
     Perfect no b/w 1 to 100
     6, 28, 
+
+Q10: 
+        entre no. : 5
+              1 
+            3 2 1 
+          5 4 3 2 1 
+        7 6 5 4 3 2 1 
+      9 8 7 6 5 4 3 2 1
+
+Q11:
+    Enter elements of the array: 1 2 3 4 5 6 7 8 9
+
+    Entered array1, 2, 3, 4, 5, 6, 7, 8, 9, 
+    Enter position: 5
+    Enter value: 10
+
+    Array after insertion : 1, 2, 3, 4, 5, 10, 6, 7, 8, 9,
+
+Q12:
+    Enter elements of the array : 94 6 62 97 83 55 74 72 5 1
+
+    Array befor sort : 94, 6, 62, 97, 83, 55, 74, 72, 5, 1, 
+    Array after sort : 1, 5, 6, 55, 62, 72, 74, 83, 94, 97,
+
+Q13:
+    Enter element at position [0][0]: 1
+    Enter element at position [0][1]: 2
+    Enter element at position [0][2]: 3
+    Enter element at position [1][0]: 4
+    Enter element at position [1][1]: 5
+    Enter element at position [1][2]: 6
+    Enter element at position [2][0]: 7
+    Enter element at position [2][1]: 8
+    Enter element at position [2][2]: 9
+    Matrix:
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    Sum of diagonal 1: 15
+    Sum of diagonal 2: 15
+
+Q14:
+    Enter elements of matrix 1:
+    1 2 3 4 5 6 7 8 9 
+
+    Enter elements of matrix 2:
+    11 22 33 44 55 66 77 88 99
+
+    Matrix 1:
+    1 2 3 
+    4 5 6 
+    7 8 9 
+
+    Matrix 2:
+    11 22 33 
+    44 55 66 
+    77 88 99 
+
+    Product:
+    330 396 462 
+    726 891 1056 
+    1122 1386 1650 
+
+Q15:
+    Enter elements of the matrix:
+    1 2 3 4 5 6 7 8 9 
+    Matrix:
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    Number of primes in row 1: 2
+    Number of primes in row 2: 1
+    Number of primes in row 3: 1
+
+Q16:
+    Enter a number: 6
+    Factorial of 6 is 720
+Q17:
+    Enter 2 number: 10 43
+    LCM of 10 and 43 is 430
+
+Q18:
+    Roll No: 101
+    Name: Aditya Vishwakarma
+    Physics: 78.0
+    Chemistry: 86.0
+    Mathematics: 92.0
+    Total: 256.0
+    Percentage: 85.33333333333333
+
+Q19:
+    The animal is eating.
+    The dog is barking.
+    The poodle is fetching.
