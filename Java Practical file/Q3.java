@@ -44,9 +44,9 @@ class Q3 {
 
 		// displaying the result
 		if (result) {
-			System.out.println("There Is a vowel in the inputed text");
+			System.out.println("There Is a vowel in the inputted text");
 		} else {
-			System.out.println("There Are NO vowel in the inputed text");
+			System.out.println("There Are NO vowel in the inputted text");
 		}
 		// closing the Scanner object
 		scr.close();

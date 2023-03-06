@@ -57,5 +57,4 @@ public class Q15 {
 
         scr.close();
     }
-
 }

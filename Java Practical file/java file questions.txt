@@ -48,4 +48,4 @@ Q18. WAP to create a class Student with following data members:
 
 Q19. WAP to give an example of multi level inheritance.
 
-Q20. WAP to given an example of Hierarchical inheritance.	  
+Q20. WAP to given an example of Hierarchical inheritance.

@@ -1,4 +1,4 @@
-// Q19. WAP to give an example of multi level inheritance.
+// Q19. WAP to give an example of multilevel inheritance.
 
 // This program demonstrates inheritance in Java, with a hierarchy of Animal, Dog, and Poodle classes
 // Each class has some behavior that is specific to it, as well as behavior inherited from its parent classes

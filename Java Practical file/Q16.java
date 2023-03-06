@@ -8,22 +8,28 @@ public class Q16 {
     // loop
     public static long calculateFactorial(int num) {
         if (num < 0) {
-            throw new IllegalArgumentException("Number must be non-negative."); // throw an exception if the number is
-                                                                                // negative
+            // throw an exception if the number is negative
+            throw new IllegalArgumentException("Number must be non-negative.");
         }
         long factorial = 1;
-        for (int i = 1; i <= num; i++) { // loop through each number from 1 to num and multiply them together
+        // loop through each number from 1 to num and multiply them together
+        for (int i = 1; i <= num; i++) {
             factorial *= i;
         }
-        return factorial; // return the factorial
+        // return the factorial
+        return factorial;
     }
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int num = scr.nextInt(); // get user input for the number to calculate factorial
-        long factorial = calculateFactorial(num); // calculate the factorial of the number
-        System.out.println("Factorial of " + num + " is " + factorial); // print out the factorial
-        scr.close(); // close the scanner to free up resources
+        // get user input for the number to calculate factorial
+        int num = scr.nextInt();
+        // calculate the factorial of the number
+        long factorial = calculateFactorial(num);
+        // print out the factorial
+        System.out.println("Factorial of " + num + " is " + factorial);
+        // close the scanner to free up resources
+        scr.close();
     }
 }

@@ -22,10 +22,13 @@ class Q9 {
 
         // Looping through all numbers from 1 to limit
         for (int i = 1; i <= limit; i++) {
-            if (isPerfect(i)) { // Checking if the number is perfect
-                System.out.print(i + ", "); // Printing the perfect number
+            // Checking if the number is perfect
+            if (isPerfect(i)) {
+                // Printing the perfect number
+                System.out.print(i + ", ");
             }
         }
-        System.out.println(); // Printing a new line after all perfect numbers are printed
+        // Printing a new line after all perfect numbers are printed
+        System.out.println();
     }
 }
