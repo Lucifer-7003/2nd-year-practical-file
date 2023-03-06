@@ -19,7 +19,10 @@ int main()
     Operator opr; // Create an instance of Operator class
     int a, b;
     cout << "Enter two numbers : ";
-    cin >> a >> b;                                  // Read two numbers from user
-    cout << "Addition : " << opr.add(a, b) << endl; // Display the result of addition
-    return 0;                                       // Indicate successful completion of program
+    // Read two numbers from user
+    cin >> a >> b;
+    // Display the result of addition
+    cout << "Addition : " << opr.add(a, b) << endl;
+    // Indicate successful completion of program
+    return 0;
 }

@@ -24,14 +24,6 @@ int main()
     cout << "Enter Radius : ";
     cin >> radius;
 
-    // Clear the console screen
-    // Commented out as it may not work on all systems
-    // system("CLS");
-
-    // Clear the console screen using system command
-    // This works on Unix-like systems
-    system("clear");
-
     // Output the circumference and area of the circle
     cout << "Circumference for circle of radius '" << radius << "' is : " << circumference(radius) << endl;
     cout << "\t&\n";

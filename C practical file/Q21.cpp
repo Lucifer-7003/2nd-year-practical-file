@@ -11,11 +11,13 @@ using namespace std;
 // Function to print the inverted half pyramid pattern
 void inverterHalfPyramid(int rows)
 {
-    for (int i = rows; i >= 1; i--) // loop to iterate rows in descending order
+    // loop to iterate rows in descending order
+    for (int i = rows; i >= 1; i--)
     {
-        for (int j = 1; j <= i; j++) // loop to print "" in each row
+        // loop to print "* " in each row
+        for (int j = 1; j <= i; j++)
         {
-            cout << " ";
+            cout << "* ";
         }
         cout << endl; // move to next row
     }
@@ -28,8 +30,7 @@ int main()
     cout << "Enter no of rows : ";
     cin >> rows; // get number of rows from user
 
-    system("clear"); // clear screen for Linux/Mac OS
-
-    inverterHalfPyramid(rows); // call function to print pattern
+    // call function to print pattern
+    inverterHalfPyramid(rows);
     return 0;
 }

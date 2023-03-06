@@ -12,6 +12,7 @@ int arrayAnalysis(int *arr, int option, int len)
     {
     // If option is 1, find the smallest element in the array
     case 1:
+    {
         int small;
         for (int i = 0; i < len; i++)
         {
@@ -26,9 +27,11 @@ int arrayAnalysis(int *arr, int option, int len)
         }
         return small;
         break;
+    }
 
     // If option is 2, find the largest element in the array
     case 2:
+    {
         int large;
         for (int i = 0; i < len; i++)
         {
@@ -43,18 +46,22 @@ int arrayAnalysis(int *arr, int option, int len)
         }
         return large;
         break;
+    }
 
     // If option is 3, find the sum of all elements in the array
     case 3:
+    {
         int sum = 0;
         for (int i = 0; i < len; i++)
         {
             sum += arr[i];
         }
         return sum;
-
+        break;
+    }
     // If option is not 1, 2 or 3, find the average of all elements in the array
     default:
+    {
         int sum = 0, avg;
         for (int i = 0; i < len; i++)
         {
@@ -63,6 +70,7 @@ int arrayAnalysis(int *arr, int option, int len)
         avg = sum / len;
         return avg;
         break;
+    }
     }
 }
 
@@ -85,8 +93,8 @@ int main()
     cout << endl;
 
     // Call the arrayAnalysis function with different options to get different results
-    largest = arrayAnalysis(arr, 1, len);
-    smallest = arrayAnalysis(arr, 2, len);
+    smallest = arrayAnalysis(arr, 1, len);
+    largest = arrayAnalysis(arr, 2, len);
     sum = arrayAnalysis(arr, 3, len);
     avg = arrayAnalysis(arr, 0, len);
 

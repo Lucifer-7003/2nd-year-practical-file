@@ -11,9 +11,14 @@ int multiplication(int a, int b)
 
 int main()
 {
-    int a, b;                                                   // declare integer variables a and b
-    cout << "Enter 2 numbers: ";                                // ask the user to enter two numbers
-    cin >> a >> b;                                              // read the input from the user and store it in a and b
-    cout << "Multiplication: " << multiplication(a, b) << endl; // print the product of a and b
-    return 0;                                                   // exit the program with a success status
+    // declare integer variables a and b
+    int a, b;
+    // ask the user to enter two numbers
+    cout << "Enter 2 numbers: ";
+    // read the input from the user and store it in a and b
+    cin >> a >> b;
+    // print the product of a and b
+    cout << "Multiplication: " << multiplication(a, b) << endl;
+    // exit the program with a success status
+    return 0;
 }

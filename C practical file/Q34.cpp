@@ -27,7 +27,7 @@ int main()
     int num1, num2, num3;
 
     // Prompt user to input three numbers
-    cout << "Enter 3 numbers separated by spaces: ";
+    cout << "Enter 3 numbers: ";
     cin >> num1 >> num2 >> num3;
 
     // Create an instance of the Average class

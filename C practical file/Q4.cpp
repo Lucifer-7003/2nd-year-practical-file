@@ -9,9 +9,6 @@ int main()
     cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
 
-    // Clear the console
-    system("clear");
-
     // Print the entered numbers
     cout << "Entered numbers: " << num1 << " " << num2 << endl;
 
@@ -19,21 +16,21 @@ int main()
     cout << "Assignment operators:" << endl;
 
     num1 += num2; // num1 = num1 + num2
-    cout << num1 << " += " << num2 << " : " << num1 << endl;
+    cout << " += : " << num1 << endl;
 
     num1 -= num2; // num1 = num1 - num2
-    cout << num1 << " -= " << num2 << " : " << num1 << endl;
+    cout << " -= : " << num1 << endl;
 
     num1 *= num2; // num1 = num1 * num2
-    cout << num1 << " *= " << num2 << " : " << num1 << endl;
+    cout << " *= : " << num1 << endl;
 
     if (num2 != 0)
     {
         num1 /= num2; // num1 = num1 / num2
-        cout << num1 << " /= " << num2 << " : " << num1 << endl;
+        cout << " /= : " << num1 << endl;
 
         num1 %= num2; // num1 = num1 % num2
-        cout << num1 << " %= " << num2 << " : " << num1 << endl;
+        cout << " %= : " << num1 << endl;
     }
     else
     {

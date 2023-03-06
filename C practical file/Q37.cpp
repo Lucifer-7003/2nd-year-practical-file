@@ -18,13 +18,17 @@ int main()
         cin >> a;
         if (a > 0) // Check if the number is positive
         {
-            ++pov;                         // Increment the positive counter
-            (a % 2 == 0) ? ++even : ++odd; // Increment either the even or odd counter based on the remainder of the number divided by 2
+            // Increment the positive counter
+            ++pov;
+            // Increment either the even or odd counter based on the remainder of the number divided by 2
+            (a % 2 == 0) ? ++even : ++odd;
         }
         else if (a < 0) // Check if the number is negative
         {
-            ++neg;                         // Increment the negative counter
-            (a % 2 == 0) ? ++even : ++odd; // Increment either the even or odd counter based on the remainder of the number divided by 2
+            // Increment the negative counter
+            ++neg;
+            // Increment either the even or odd counter based on the remainder of the number divided by 2
+            (a % 2 == 0) ? ++even : ++odd;
         }
         else // If the number is 0
         {

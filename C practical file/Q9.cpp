@@ -12,9 +12,6 @@ int main()
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    // clear the console for better visibility
-    system("clear");
-
     // display the entered numbers
     cout << "Entered numbers are: " << num1 << ", " << num2 << endl;
 

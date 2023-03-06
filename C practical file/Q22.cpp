@@ -39,10 +39,6 @@ int main()
     cout << "Enter no of rows : ";
     cin >> rows;
 
-    // Clear the console screen
-    // Note: This line may not work on all operating systems
-    system("clear");
-
     // Call the function to print the pyramid
     pyramid(rows);
 

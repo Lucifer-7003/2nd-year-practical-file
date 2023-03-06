@@ -7,23 +7,31 @@ using namespace std;
 int findHighestDigit(int num)
 {
     int highest = 0;
-    while (num > 0) // loop until all digits of the number have been processed
+    // loop until all digits of the number have been processed
+    while (num > 0)
     {
-        int digit = num % 10; // get the rightmost digit of the number
-        if (digit > highest)  // check if the current digit is greater than the highest digit found so far
+        // get the rightmost digit of the number
+        int digit = num % 10;
+        // check if the current digit is greater than the highest digit found so far
+        if (digit > highest)
         {
-            highest = digit; // if yes, update the highest digit
+            // if yes, update the highest digit
+            highest = digit;
         }
-        num /= 10; // remove the rightmost digit from the number
+        // remove the rightmost digit from the number
+        num /= 10;
     }
-    return highest; // return the highest digit
+    // return the highest digit
+    return highest;
 }
 
 int main()
 {
     int num;
     cout << "Enter number : ";
-    cin >> num;                                                                        // get input from the user
-    cout << "The highest digit in " << num << " is " << findHighestDigit(num) << endl; // call the function to find the highest digit and print the result
+    // get input from the user
+    cin >> num;
+    // call the function to find the highest digit and print the result
+    cout << "The highest digit in " << num << " is " << findHighestDigit(num) << endl;
     return 0;
 }

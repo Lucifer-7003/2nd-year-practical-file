@@ -32,6 +32,7 @@ void pyramid(int rows)
     {
         cout << j << " ";
     }
+    cout << endl;
 }
 
 int main()

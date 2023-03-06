@@ -9,9 +9,6 @@ int main()
     cout << "Enter 2 numbers: ";
     cin >> num1 >> num2;
 
-    // Clear console screen
-    system("clear");
-
     // Print the entered numbers
     cout << "Entered numbers are: " << num1 << ", " << num2 << endl;
 
@@ -47,7 +44,7 @@ int main()
     cout << num1 << " >> " << num2 << " : " << result << endl;
 
     // Print explanation of the output
-    cout << "\n\n**here '0' = false, '1' = true **" << endl;
+    cout << "\n**here '0' = false, '1' = true **" << endl;
 
     return 0;
 }

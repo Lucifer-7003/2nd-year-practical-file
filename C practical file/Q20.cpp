@@ -14,13 +14,14 @@ void hollowRectangle(int width, int length)
     {
         for (int j = 1; j <= length; j++) // loop for each column
         {
-            if (i == 1 || i == width || j == 1 || j == length) // check if current element is on the border
+            // check if current element is on the border
+            if (i == 1 || i == width || j == 1 || j == length)
             {
                 cout << "* "; // print asterisk
             }
             else
             {
-                cout << " "; // print space
+                cout << "  "; // print space
             }
         }
         cout << endl; // move to next line
@@ -34,7 +35,7 @@ int main()
     cin >> length;
     cout << "Enter width : ";
     cin >> width;
-    system("clear"); // clear the console
+    cout << endl;
 
     cout << "Length : " << length << ", Width : " << width << endl;
     hollowRectangle(width, length); // call the function to print rectangle

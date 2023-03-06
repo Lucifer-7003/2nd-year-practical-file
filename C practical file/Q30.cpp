@@ -71,10 +71,11 @@ int main()
 	// Read in the candidate's name
 	cin >> name;
 
+	cout << "Enter marks :" << endl;
 	// Prompt the user to enter the marks for each subject
 	for (int i = 0; i < 7; i++)
 	{
-		cout << "Enter " << subject[i] << " : ";
+		cout << subject[i] << " : ";
 		cin >> marks[i];
 	}
 

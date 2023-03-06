@@ -31,8 +31,6 @@ int main()
         cin >> a;
         arr[i] = a;
     }
-    // Clear the console screen
-    system("clear");
     // Reverse the main array and store the result in the reverse array
     reverse(arr, rev_arr, len);
     // Print the reverse array
@@ -46,5 +44,6 @@ int main()
             cout << ", ";
         }
     }
+    cout << endl;
     return 0;
 }

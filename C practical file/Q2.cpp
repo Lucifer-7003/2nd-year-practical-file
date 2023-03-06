@@ -10,12 +10,13 @@ int main()
     cout << "Enter two numbers: "; // prompt for user input
     cin >> num1 >> num2;           // reading two numbers from user
 
-    system("clear"); // clearing the console screen
+    // displaying the entered numbers
+    cout << "Entered numbers: " << num1 << " " << num2 << endl;
 
-    cout << "Entered numbers: " << num1 << " " << num2 << endl; // displaying the entered numbers
-
-    result = num1 + num2;                                                           // performing addition
-    cout << "Addition of " << num1 << " and " << num2 << " is: " << result << endl; // displaying the addition result
+    // performing addition
+    result = num1 + num2;
+    // displaying the addition result
+    cout << "Addition of " << num1 << " and " << num2 << " is: " << result << endl;
 
     return 0; // end of program
 }

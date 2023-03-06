@@ -24,7 +24,7 @@ int main()
 
         else // If the number is odd, print this message
             cout
-                << i << " is an ODD number" << endl;
+                << i << " is an ODD number\t";
         i++;            // Move on to the next number
     } while (i <= 100); // Continue until we reach 100
 
