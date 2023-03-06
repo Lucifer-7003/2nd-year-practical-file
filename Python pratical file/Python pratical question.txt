@@ -1,0 +1,66 @@
+Q1. Write a Python program to add two numbers.
+
+Q2. Write a Python program to find the maximum of two numbers.
+
+Q3. Write a Python program to find the factorial of a number.
+
+Q4. Write a Python program to find the simple interest.
+
+Q5. Write a Python program to find the compound interest.
+
+Q6. Write a Python program to check if a given number is an Armstrong number.
+
+Q7. Write a Python program to find the area of a circle.
+
+Q8. Write a Python program to print all prime numbers in an interval.
+
+Q9. Write a Python program to check whether a number is a palindrome or not.
+
+Q10. Write a Python program to check if a given number is a Fibonacci number.
+
+Q11. Write a Python program to find the smallest number in a list.
+
+Q12. Write a Python program to find the largest number in a list.
+
+Q13. Write a Python program to interchange the first and last elements in a list.
+
+Q14. Write a Python program to swap two elements in a list.
+
+Q15. Write a Python program to find the length of a list using different methods.
+
+Q16. Write a Python program to check if an element exists in a list using different methods.
+
+Q17. Write a Python program to clear a list using different methods.
+
+Q18. Write a Python program to reverse a list.
+
+Q19. Write a Python program to check if a substring is present in a given string.
+
+Q20. Write a Python program to accept strings which contain all vowels.
+
+Q21. Write a Python program to find the maximum and minimum k elements in a tuple.
+
+Q22. Write a Python program to perform a linear search.
+
+Q23. Write a Python program to read a file word by word.
+
+Q24. Write a Python program to create a calculator using functions (create a separate function for each operation).
+
+Q25. Write a Python program to import the Math module and show how to use it.
+
+Q26. Write a Python program to create a lambda function.
+
+Q27. Write a Python program to perform matrix multiplication.
+
+Q28. Write a Python program to print the following pattern:
+1 
+2 3 
+4 5 6 
+7 8 9 10
+
+Q29. Write a Python program to print the following pattern:
+2 
+4 6 
+8 10 12 
+14 16 18 20
+
