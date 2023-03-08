@@ -41,9 +41,9 @@ public class Q14 {
 
         // calculate product of matrices
         int[][] product = new int[3][3];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                for (int k = 0; k < 3; k++) {
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix2[0].length; j++) {
+                for (int k = 0; k < matrix2.length; k++) {
                     product[i][j] += matrix1[i][k] * matrix2[k][j];
                 }
             }

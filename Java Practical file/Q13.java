@@ -18,29 +18,29 @@ class Q13 {
     }
 
     public static void main(String[] args) {
-        int[][] arr = new int[3][3];
+        int[][] matrix = new int[3][3];
         Scanner scr = new Scanner(System.in);
 
         // populate matrix with user inputs
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 System.out.print("Enter element at position [" + i + "][" + j + "]: ");
-                arr[i][j] = scr.nextInt();
+                matrix[i][j] = scr.nextInt();
             }
         }
 
         System.out.println();
         // display matrix and diagonal sums
         System.out.println("Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(arr[i][j] + " ");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
 
         System.out.println();
-        int[] sum = diagonalSum(arr);
+        int[] sum = diagonalSum(matrix);
         System.out.println("Sum of diagonal 1: " + sum[0]);
         System.out.println("Sum of diagonal 2: " + sum[1]);
 
