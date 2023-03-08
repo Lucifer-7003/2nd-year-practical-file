@@ -40,5 +40,4 @@ public class Q20 {
         cat.meow(); // defined in Cat
         dog.bark(); // defined in Dog
     }
-
 }
